@@ -4,11 +4,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Survay Form</title>
+  <title>Survey Form</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+
+  <div id="root">
+    <header id="header">
+      <h1 id="title">Survay Form</h1>
+      <p id="description">Tell us about yourself</p>
+    </header>
+
+    <main id="main">
+
+      <form action="" id="survey-form">
+
+        <!-- Name as text -->
+        <div class="container vertical">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <!-- Emai as email -->
+        <div class="container vertical">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Number as number with min and max values -->
+        <div class="container vertical">
+          <label id="number-label" for="number">Age</label>
+          <input id="number" type="number" min="0" max="120" name="number" placeholder="Enter your age">
+        </div>
+
+        <!-- Select and options -->
+        <div class="container vertical">
+          <label for="dropdown">Where are you from?</label>
+          <select name="continent" id="dropdown">
+            <option value="Africa">Africa</option>
+            <option value="Antarctica">Antarctica</option>
+            <option value="Asia">Asia</option>
+            <option value="Australia">Australia</option>
+            <option value="Europe">Europe</option>
+            <option value="North America">North America</option>
+            <option value="South America">South America</option>
+          </select>
+        </div>
+
+        <!-- Radiobuttons -->
+        <div class="container horizontal">
+          <fieldset>
+            <legend>Your gender</legend>
+
+            <label for="male">
+              <input type="radio" name="gender" id="male" value="male">Male
+            </label>
+
+            <label for="female">
+              <input type="radio" name="gender" id="female" value="female">Female
+            </label>
+
+            <label for="other">
+              <input type="radio" name="gender" id="other" value="other">Other
+            </label>
+
+          </fieldset>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="container horizontal">
+
+          <fieldset>
+
+            <legend>Which language do you know?</legend>
+
+            <label for="python">
+              <input type="checkbox" name="python" id="python" value="python">Python
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="javascript" id="javascript" value="javascript">Javascript
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="java" id="java" value="java">Java</label>
+
+            <label for="python">
+              <input type="checkbox" name="c_sharp" id="c_sharp" value="c_  sharp">C#
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="c" id="c" value="c">C
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="cpp" id="cpp" value="cpp">C++
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="go" id="go" value="go">GO
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="r" id="r" value="r">R
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="swift" id="swift" value="swift">Swift
+            </label>
+
+            <label for="python">
+              <input type="checkbox" name="php" id="php" value="php">PHP
+            </label>
+
+          </fieldset>
+        </div>
+
+        <!-- Textarea -->
+        <div class="container vertical">
+          <label for="comment">Write your comment</label>
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <div class="container">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+
+      </form>
+
+    </main>
+  </div>
 
 </body>
 
